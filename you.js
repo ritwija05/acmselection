@@ -96,12 +96,12 @@ var selectedParticipants = [
 function checkSelection() {
     var participantName = document.getElementById("participantName").value.toLowerCase(); // Convert input to lowercase
 
-    // Check if the lowercase participant's name is in the list of lowercase names
+    
     if (selectedParticipants.includes(participantName)) {
-        // Display a confirmation message
+        
         document.getElementById("result").innerHTML = "Congratulations, " + participantName + "! You made it to the ACM club!";
     } else {
-        // Display a message indicating that the participant is not selected
+        
         document.getElementById("result").innerHTML = "Sorry, " + participantName + ". You didn't make it this time.";
     }
 }
