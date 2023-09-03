@@ -21,6 +21,7 @@ var selectedParticipants = [
     "saanchi jain",
     "bhuvi garg",
     "anirudh mehta",
+    "anshika sharna",
     "aarya gupta",
     "anvesha vijan",
     "saniya gupta",
