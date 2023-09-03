@@ -98,7 +98,7 @@ function checkSelection() {
     
     if (selectedParticipants.includes(participantName)) {
         
-        document.getElementById("result").innerHTML = "Congratulations, " + participantName + "! You made it to the ACM!";
+        document.getElementById("result").innerHTML = "Congratulations,🎊 " + participantName + "! You made it to the ACM!";
     } else {
         
         document.getElementById("result").innerHTML = "Sorry, " + participantName + ". You didn't make it this time.";
