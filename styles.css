@@ -2,39 +2,60 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #333;
+    height: 100dvh;
+    overflow: hidden;
 }
 
 header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 8px 0;
     display: flex; /* Use flexbox to arrange elements horizontally */
     justify-content: center; /* Center the elements horizontally */
     align-items: center; /* Center the elements vertically */
+    width: 100vw;
+    
 }
 
 header img {
     width: 90px; /* Adjust the width as needed */
-    margin-right: 50px; /* Add spacing between the logo and heading */
+    margin-right: 2rem; /* Add spacing between the logo and heading */
 }
 
 h1 {
     margin: 0; /* Remove default margin for h1 */
 }
-
-main {
-    max-width: 800px;
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+.selection-form {
+    
     margin: 0 auto;
-    padding: 20px;
-    background-color: white;
+    padding: 2rem;
+    background-color: rgba(0, 36, 77, 0.548);
+    border-radius: 8px;
+    color: whitesmoke;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ }
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    z-index: -1;
 }
 
-.selection-form, .selected-list {
-    margin-bottom: 30px;
+#participantName{
+
+    width: 95%;
+    padding: 0.5rem;
+    margin-bottom: 10px;
 }
+
 
 h2 {
     margin-top: 0;
@@ -42,17 +63,22 @@ h2 {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #050036;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
 }
 
 button {
-    background-color: #333;
+    background-color: #0080ff;
+    border-radius: 8px;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -75,3 +101,46 @@ ul {
 li {
     margin-bottom: 5px;
 }
+@media screen and (max-width: 1920px) {
+    main {
+        margin: 5% auto;
+        width: 80%;
+        
+    }
+    .selection-form
+    {
+        width: 60%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    header img{
+        width: 90px;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 5% auto;
+        width: 95%;
+        
+    }
+    .selection-form
+    {
+        width: 80%;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    header img{
+        width: 60px;
+    }
+    h2{
+        font-size: 1em;
+    }
+}
+   
