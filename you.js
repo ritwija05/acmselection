@@ -4,7 +4,7 @@ var selectedParticipants = [
     "prateeksha",
     "sameeksha shakya",
     "amol sadana",
-    "abhinandan malik",
+    "abhinandan malik", 
     "gaurav kumar",
     "anwesh sinha",
     "priyal singh",
